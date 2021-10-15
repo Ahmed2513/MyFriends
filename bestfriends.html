@@ -80,10 +80,10 @@
                 {
                     var x = bestFreindsNameNoSpace.indexOf(userInputNoSpacee);
                     console.log(x);
+                    document.getElementById('formImg').innerHTML = `<img src='Friendsphotos/—Pngtree—true sign png_4863856.png' style='height: 50px; width: auto; display: inherit; position: absolute; right: 0; top: 0; animation-name: menu; animation-duration: 1s; animation-delay: 0s;'>`;
+                    var headingToPage = document.getElementById('headingToPage');
+                    headingToPage.innerHTML=  `<a href=${bestFreindsNameNoSpace[x]}.html> Go To Your Page </a>`;
                     window.alert(`Hello ${bestFriendsName[x]} you are from my best friends : ) `);
-                    // document.getElementById('bfriendSLink').innerHTML = `<a href='${userInputNoSpacee.toLowerCase()}'></a>`;
-                    document.getElementById('formImg').innerHTML = `<img src='Friendsphotos/—Pngtree—true sign png_4863856.png' style='height: 50px; width: auto; display: inherit; position: absolute; right: 0; top: 0'>`;
-                    window.open(`${bestFreindsNameNoSpace[x]}.html`);
                 }
                 else if(friendsNameTotalNoSpace.includes(userInput.split(' ').join('')) === true){
                     window.alert(`Sorry but you are not from my best friends. \n If you want we can be : )`)
@@ -143,108 +143,6 @@
                 </li>
             </ul>
     </div>
-    <!-- <div class="imgdiv">
-        <div class="form">
-            <img src="Friendsphotos/585e4be1cb11b227491c3398.png" class="imgAccount">
-            <textarea id="textArea" placeholder="Please Enter Your Name!!" maxlength="22" rows="1" cols="30" ></textarea><br>
-            <span id="formImg">
-            </span>
-        </div>
-        <button class="button"
-            onclick=
-            "
-                var userInputValue = document.getElementById('textArea').value;
-                var userInput = userInputValue.toLowerCase();
-                var userInputNoSpacee = userInput.split(' ').join('');
-                console.log(userInput);
-                var bestFriends = ['Mahmoud' , 'Youssef' , 'Malak' , 'Seif' , 'Mahmoud' , 'Georges' , 'Brayen' , 'Noor' , 'Peter'];
-                const bestFriendsLower = bestFriends.map(function (name){
-                    return name.toLowerCase();
-                });
-                console.log(bestFriendsLower)
-                var bestFriendsLast = ['Hassan', 'Monir' , 'Soliman' , 'Monir' , 'Hozayen' , 'Adel' , 'Gerges' , 'Almuhamady' , 'Sameh'];
-                const bestFriendsLastLower = bestFriendsLast.map(function (name){
-                    return name.toLowerCase();
-                });
-                console.log(bestFriendsLastLower)
-                var i = 0;
-                var bestFriendsName = [];
-                while(i < 9)
-                {
-                    bestFriendsName[i] = bestFriends[i] + ' ' + bestFriendsLast[i]; 
-                    i++;
-                }
-                const bestFriendsNameLower = bestFriendsName.map(function(name){
-                    return name.toLowerCase();
-                });
-                console.log(bestFriendsName);
-                console.log(bestFriendsNameLower);
-                const bestFreindsNameNoSpace = bestFriendsNameLower.map(function(name){
-                    return name.split(' ').join('');
-                });
-                console.log(bestFreindsNameNoSpace);
-                console.log(`How many best friends do i have?? `);
-                console.log(`I have ${bestFriends.length}`);
-
-
-                var frinedsName = ['Seif' , 'Youssef' , ' Malak' , 'Mahmoud' , 'Brayen' , 'Georges' , 'Youssef' , 'Ahmed' , 'Adham' , 'Soliman' , 'Mostafa' , 'Ahmed' , 'Yasser' , 'Hassan' , 'Yassin' , 'Jana' , 'Rawya' , 'Mohamed' , 'Khalid' , 'Mourad' , 'Eman' , 'Mahmoud' , 'Rami' , 'Abdelwahab' , 'Salah' , 'Ghada' , 'Mourad' , 'Safwat' , 'Khalid' , 'Peter' , 'Raymond' , 'Amira' , 'Mazen' , 'Ismail', 'Youssef' , 'Ahmed' , 'Joseph' , 'Abdelrahman' , 'Moustafa' , 'Mohamed' , 'Hima' , 'Youusef' , 'Mohamed' , 'Abdallah' , 'Karim' , 'Georges' , 'Mora' , 'Ibrahim' , 'Roger' , 'Husain' , 'Tarek' , 'Ahmed' , 'Ahmed' , 'Noha' , 'Hamza' , 'Ahmed' , 'Ahmed' , 'Ahmed' , 'Mohamed' , 'Nabil' , 'Youssef' , 'Hicham' , 'Noor' , 'Mohab' , 'Nooreldine' , 'Mahmoud' , 'Youssef' , 'Mahmoud' , 'Ibrahim' , 'Mahmoud' , 'Noor' , 'Hozayen' , 'Amen' , 'Marianne'];
-                const frinedsNameLower = frinedsName.map(name => name.toLowerCase());
-                console.log(frinedsNameLower);
-                console.log(frinedsNameLower.length)
-
-
-                var friendsNameLast = ['Monir' , 'Monir' , 'Soliman' , 'Hassan' , 'Gerges' , 'Adel' , 'Azab' , 'Mohamed' , 'Ossama' , 'Gobrial' , 'Khedr' , 'Farid' , 'Gaber' , 'Mohamed' , 'Aghoury' , 'Madian' , 'Ali' , 'Bahgat' , 'Ashraf' , 'Amin' , 'Bahgat' , 'Hozayen' , 'Raafat' , 'Soliman' , 'Ahmed' , 'Ez' , 'Nabil' , 'Osman' , 'Farouk' , 'Sameh' , 'Youakim' , 'Bahgat' , 'Hicham' , 'Shahin' , 'Tamer' , 'Ali' , 'Hani' , 'Elsaeed' , 'Mahmoud' , 'Hany' , 'Emad' , 'El Hussieny' , 'Shokery' , 'Tarek' , 'Mahmoud' , 'Absi' , 'Medhat' , 'Hany', 'Yasser' , 'Wafaie' , 'Youssef' , 'Tarek' , 'Mohamed' , 'Amin' , 'Yosry' , 'Rahmo' , ' Hecham' , 'Mohamed' , 'Aly' , 'Nader' , 'Adel' , 'Fouad' , 'Almuhamady' , 'Mohamed' , 'Ahmed' , 'Hassan' , 'Fahmy' , 'Hassan' , 'Abdeaziz' , 'Hassan' , 'Gad' , 'Hozayen' , 'Hazem' , 'El Komos'];
-                const friendsNameLastLower = friendsNameLast.map(name => name.toLowerCase());
-                console.log(friendsNameLastLower);
-                console.log(friendsNameLastLower.length);
-
-
-                var friendsNameTotal = [];
-                i = 0;
-                while(i < 74)
-                {
-                    friendsNameTotal[i] = frinedsName[i]  + ' ' + friendsNameLast[i];
-                    i++;
-                };
-                const friendsNameTotalLower = friendsNameTotal.map(function(name){
-                    return name.toLowerCase();
-                });
-                const friendsNameTotalNoSpace = friendsNameTotalLower.map(function(name){
-                    return name.split(' ').join('');
-                });
-                console.log(friendsNameTotalNoSpace);
-
-            
-
-
-                if(bestFreindsNameNoSpace.includes(userInput.split(' ').join('')) === true)
-                {
-                    var x = bestFreindsNameNoSpace.indexOf(userInputNoSpacee);
-                    console.log(x);
-                    window.alert(`Hello ${bestFriendsName[x]} you are from my best friends : ) `);
-                    // document.getElementById('bfriendSLink').innerHTML = `<a href='${userInputNoSpacee.toLowerCase()}'></a>`;
-                    document.getElementById('formImg').innerHTML = `<img src='Friendsphotos/—Pngtree—true sign png_4863856.png' style='height: 50px; width: auto; display: inherit;'></button>`;
-                    window.open(`${bestFreindsNameNoSpace[x]}.html`);
-                }
-                else if(friendsNameTotalNoSpace.includes(userInput.split(' ').join('')) === true){
-                    window.alert(`Sorry but you are not from my best friends. \n If you want we can be : )`)
-                }
-                else
-                {
-                    n = 0;
-                    while(n < 6){
-                        window.alert(`You are not a friend of mine!!`);
-                        n++;
-                    }
-
-                }
-            ">
-            Check if you are from my best friends
-        </button><br>
-        <div id="bfriendSLink">
-            
-        </div>
-    </div> -->
     <div class="wrapper" id="imgdiv">
             <header>Best Friends Login</header>
             <form action="#">
@@ -265,6 +163,7 @@
             <script>
                 var input = document.getElementById('inPut');
                 var imgTargeted = document.getElementById('thisBspan');
+       
                 input.onfocus = function(){
                     imgTargeted.innerHTML = '<img src="Friendsphotos/homeiconblue.png" style=" border-radius: 15px; width: 35px; height: 35px;  position: absolute; left: 0; top: 0; margin: 7.5px 5px;">'
                     console.log(`I'm ok`);
@@ -290,6 +189,9 @@
             <input type="submit" value="Login" onclick="passValues()" class="button" style="width: 100%;">
             </form>
             <div class="sign-txt" style="color: white;"><span style="color: white;">Not yet member?</span> <a href="#">Signup now</a></div>
+            <div id='headingToPage' style="font-size: 28px; margin: 8px;"> 
+
+            </div>
     </div>
 </body>
 </html>
