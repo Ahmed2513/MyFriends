@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <meta name="descreption" content="............">
+    <link rel="shortcut icon" href="Friendsphotos/8lPke0r.jpg">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> -->
+    
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+   
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet"> -->
+    <script>
+        var r = document.querySelector(':root');
+        var t = document.querySelector(':root');
+        var b = document.querySelector(':root');
+        var s = document.querySelector(':root');
+        var h = document.querySelector(':root');
+        var g = document.querySelector(':root');
+        var q = document.querySelector(':root');
+   
+    /*  
+        --activeBottom: #191919d1; 
+        --disactiveBottom: #727272;
+        --activeBottomHover: black;
+        --disactiveBottomHover: #585858;
+    */
+        // Create a function for getting a variable value
+        function myFunction_get() {
+          // Get the styles (properties and values) for the root
+          var rs = getComputedStyle(r);
+          // Alert the value of the --blue variable
+        }
+
+        // Create a function for setting a variable value
+        function myFunction_set() {
+          // Set the value of variable --blue to another value (in this case "lightblue")
+          r.style.setProperty('--black', 'white');
+          t.style.setProperty('--font' , 'black');
+          b.style.setProperty('--background' , 'white');
+          s.style.setProperty('--activeBottom' , '#191919d1');
+          h.style.setProperty('--disactiveBottom' , '#727272');
+          g.style.setProperty('--activeBottomHover' , 'black');
+          q.style.setProperty('--disactiveBottomHover' , '#585858');
+          darkLight.innerHTML = '<button onclick="myFunctionBlack_set() " style=" background: transparent; border: none;"> <img src="Friendsphotos/moonWhite.png" style=" height: 31px; border-radius: 51px; padding: 4px;" id="moon"> </button>'
+        }
+
+        function myFunctionBlack_set() {
+          // Set the value of variable --blue to another value (in this case "lightblue")
+          r.style.setProperty('--black', 'black');
+          t.style.setProperty('--font' , 'white');
+          b.style.setProperty('--background' , 'black');
+          s.style.setProperty('--activeBottom' , '#ffffffd1');
+          h.style.setProperty('--disactiveBottom' , '#ffffff8f');
+          g.style.setProperty('--activeBottomHover' , 'white');
+          q.style.setProperty('--disactiveBottomHover' , '#ffffffba');
+          darkLight.innerHTML = '    <button onclick="myFunction_set()" style="    background: transparent; border: none;"> <img src="Friendsphotos/sunWhite.png" style=" height: 31px; border-radius: 51px; padding: 4px;" id="moon"> </button>'
+        }
+
+    </script>
+    <script src='script.js'></script>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div style="display: inline-flex; flex-direction: row; justify-content: flex-start; align-items: center; width: 100%;" >
+        <div style="width: calc(100%-55px);">
+       
+           
+            
+            <!-- <div class="nav">
+                <div class="title">
+                    <p style="color: black;">
+                        Friends
+                    </p>
+                </div> -->
+                 <!-- <div class="homelink">
+                    <a href="index.html" style="margin-right: 7px; color: black;">
+                       Home
+                    </a> 
+                    <a href="bestfriends.html" style="color: black;">
+                        Best friends
+                    </a>
+                </div> -->
+
+               
+            <div class="navTrial" id="navT">
+                <!-- <ul class="uli">
+                    <li><a href="index.html" class="active">Home</a></li> -->
+                    <!-- <li><a href="login.html">Login</a></li>
+                    <li><a href="bestfriends.html">Best friends</a></li> 
+                    <li><a href="about.html">About</a></li> -->
+                    <details>
+                        <summary style="background-color: #080808;">
+                            <img src="Friendsphotos/menuWhite.png"  id="moon" class="moon" alt="moon" style="
+                                width: 35px;
+                                height: 35px;
+                                background: transparent;
+                                position: fixed;
+                                top: 0;
+                                z-index: 400;
+                                left: 0;
+                                cursor: pointer;
+                                padding: 3px;
+                                border: solid white 2px;
+                                border-radius: 26px;
+                                margin-top: 2px;
+                            ">
+                        </summary>
+                        <ul class="uli1">
+                            <li><a href="home.html" class="active">Home</a></li>    
+                            <li><a href="index.html">Login</a></li>
+                            <li><a href="bestfriends.html">Best friends</a></li>    
+                            <li><a href="about.html">About</a></li>
+                        </ul>  
+                    </details>
+                <!-- </ul> -->
+            </div>
+            <script>
+                var someNav = document.getElementById('navT')
+                function myFunctionm(xty) {
+                    if (xty.matches) {
+                        someNav.innerHTML = '<details>  <summary style="background-color: #080808;"> <img src="Friendsphotos/menuWhite.png" alt="moon" style=" width: 35px; height: 35px; background: transparent; position: fixed; top: 0; z-index: 400; left: 0; cursor: pointer; padding: 3px; border: solid white 2px; border-radius: 26px; margin-top: 2px;"  id="moon"> </summary style="background-color: balck;"> <ul class="uli1"><li><a href="home.html" class="active">Home</a></li>    <li><a href="index.html">Login</a></li> <li><a href="bestfriends.html">Best friends</a></li> <li><a href="about.html">About</a></li> </ul>  </details>';
+                    }
+                    else{
+                        someNav.innerHTML = '<ul class="uli"> <li><a href="home.html" class="active">Home</a></li> <li><a href="index.html">Login</a></li> <li><a href="bestfriends.html">Best friends</a></li> <li><a href="about.html">About</a></li> </ul>';
+                    } 
+                }
+                var xty = window.matchMedia("(max-width: 664px)");
+                myFunctionm(xty);
+                xty.addListener(myFunctionm);
+                
+            </script>
+            <div class="">
+                    <ul class="madeBy">
+                        <li id="darkLight">
+                            <button onclick="myFunction_set()" style="    background: transparent; border: none;">
+                                <img src="Friendsphotos/sunWhite.png" style=" height: 31px; border-radius: 51px; padding: 4px;" id="moon">
+                            </button>
+                        </li>
+                        <li class="thing">
+                            <img src="Friendsphotos/homeiconblue.png" style=" height: 30px; border-radius: 15px; margin: 0 5px;">
+                            <span id="result"></span> 
+                            <script>
+                                document.getElementById("result").innerHTML = localStorage.getItem("textvalue");
+                            </script>
+                        </li>
+                    </ul>
+            </div>
+           
+            <div class="img"></div>
+            <div class="img-text">
+                <h1>My Friends</h1>
+            </div>
+            <div id="effect">
+                <div class="miniEffect1">
+                    <div class="effectPDiv">
+                        <h2 class="heading" style="color: orange; font-size: 56px;">City friends</h2>
+                        <p class="paragraph">
+                            Some people think I'm new here, but that's not true...
+                            I used to go there<br> when
+                             I was young because my grandfather
+                             used to live there,
+                            and when he moved to 
+                            October<br> I used to go sometime...
+                            I used to live in the neighboring city...<br>
+                            And since last year, I moved to the city...
+                            I loved this place very much because it's so friendly,
+                            only this year I made a lot of friends...
+                            I love this place so much   
+                        </p>
+                    </div>
+                    <div class="effectIDiv" id="firstImg">
+                        <img src="Friendsphotos/imageedit_1_3594213976.png" class="img2" alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="effect1">
+                <div class="miniEffect1">
+                    <div class="effectIDiv1" id="secondImg">
+                        <img src="Friendsphotos/imageedit_2_9004933458.png" class="img21" alt="">
+                    </div>
+                    <div class="effectPDiv1">
+                        <h2 class="heading1">Club Friends</h2>
+                        <p class="paragraph1">
+                            Since my childhood, I have been in this club, the shooting club
+                            I made some friends because I trained many exercices before like chess, archery etc... <br>
+                            But really, the thing I loved the most in the club was The Maqra2a. 
+                            I made a lot of<br> friends, and even those who teach us, their age was close to us which<br> was an amazing thing.
+                            I liked their activities, trips, outings and everything.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="effect2">
+                <div class="miniEffect1">
+                    <div class="effectPDiv">
+                        <h2 class="heading2" style="color: orange; margin: 23px 12px;">School Friends</h2>
+                        <p id="paragraphSchool2">
+                            <script src="scriptschool.js">
+                            </script>
+                        </p>
+                    </div>
+                    <div class="effectIDiv" id="thirdImg">
+                       <img src="Friendsphotos/imageedit_1_8693820896.png" class="img22" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="socialNav">
+            <a href="https://www.instagram.com/ahmedh_1325/">
+                <img src="FriendsPhotos/facebook-4-512.png" class="socialImg"><br>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100046618320275">
+                <img src="FriendsPhotos/twitter-4-512.png"class="socialImg"><br>
+            </a>
+            <a href="https://web.whatsapp.com/"> 
+                <img src="FriendsPhotos/whatsapp-512.png"class="socialImg"><br>
+            </a>
+            <a href="https://www.youtube.com/">
+                 <img src="Friendsphotos/youtube-4-512.png"class="socialImg"><br>
+            </a>
+        </div>    
+    </div> 
+    <div class="bottDiv">
+        <div style="font-family: math; z-index: 10; box-shadow: -3px 0px 0px 0px #ff5722; padding: 5px 10px;">
+            <a href='home.html' class="activeBottom">Home</a><br>
+            <a href='index.html' class="disactiveBottom">Login</a><br>
+            <a href='bestfriends.html' class="disactiveBottom">Best Friends</a><br>
+            <a href='about.html' class="disactiveBottom">About</a><br>
+        </div>
+        <div style="display: inline-flex; z-index: 10; box-shadow: 0px 3px #ff5722;">
+            <a href="https://www.instagram.com/ahmedh_1325/">
+                <img src="FriendsPhotos/facebook-4-512.png" class="socialImg"><br>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100046618320275">
+                <img src="FriendsPhotos/twitter-4-512.png"class="socialImg"><br>
+            </a>
+            <a href="https://web.whatsapp.com/"> 
+                <img src="FriendsPhotos/whatsapp-512.png"class="socialImg"><br>
+            </a>
+            <a href="https://www.youtube.com/">
+                 <img src="Friendsphotos/youtube-4-512.png"class="socialImg"><br>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

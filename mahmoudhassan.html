@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nooralmuhamady.css">
+    <title>Mahmoud Hassan</title>
+    <link rel="shortcut icon" href="Friendsphotos/8lPke0r.jpg">
+</head>
+<body>
+    <div class="img">
+    </div>
+    <div class="img"></div>
+     <div class="navTrial" id="navT">
+        <details  style=" height: 45px; background-color: #282A35; color: white; position: fixed; top: -7px;">
+            <summary style="font-size: 32px; margin: auto; height: 100%; margin-left: 8px; font-family: system-ui;">
+                  More
+            </summary> 
+            <ul class="uli1">
+                <li><a href="home.html">Home</a></li>    
+                <li><a href="index.html">Login</a></li>
+                <li><a href="bestfriends.html" class="active">Best friends</a></li>    
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </details>
+    <!-- </ul> -->
+    </div>
+    <script>
+        var someNav = document.getElementById('navT')
+        function myFunctionm(xty) {
+            if (xty.matches) {
+                someNav.innerHTML = '<details  style=" height: 45px; background-color: #282A35; color: white; position: fixed; top: -7px;"> <summary style="font-size: 32px; margin: auto; height: 100%; margin-left: 0px; font-family: system-ui; width: fit-content; background: black; padding: 0 10px;"> More</summary> <ul class="uli1"> <li><a href="home.html">Home</a></li> <li><a href="index.html">Login</a></li> <li><a href="bestfriends.html"  class="active">Best friends</a></li> <li><a href="about.html">About</a></li> </ul> </details>';
+            }
+            else{
+                someNav.innerHTML = '<ul class="uli"> <li><a href="home.html">Home</a></li> <li><a href="index.html">Login</a></li> <li><a href="bestfriends.html" class="active">Best friends</a></li> <li><a href="about.html">About</a></li> </ul>';
+            } 
+        }
+        var xty = window.matchMedia("(max-width: 664px)");
+        myFunctionm(xty);
+        xty.addListener(myFunctionm);
+    
+    </script>
+    <div class="">
+            <ul class="madeBy">
+                <li class="thing">
+                    <img src="Friendsphotos/homeicon.png" style="height: 30px; border-radius: 15px; margin: 0 5px;">
+                    <span id="result"></span> 
+                    <script>
+                        document.getElementById("result").innerHTML = localStorage.getItem("textvalue");
+                    </script>
+                </li>
+            </ul>
+    </div>
+        <div class='img-text'>
+            <div>
+                <h1 style="text-shadow: 0 0 20px #03a9f4; 
+                font-size: 28px; border-left: #ff0000 solid 2px;
+                padding: 0 3px; 
+                box-shadow: -20px 0px 20px #ff3b3b6b; 
+                color: #2196f3;
+                font-family: cursive
+                ">
+                    Mahmoud Hassan Mohamed Rachad
+                </h1>
+                <div id="description" style="font-size: 25px; border-left: #ff9800 solid 2px; padding: 0 9px; box-shadow: -20px 0px 20px #ffeb3b30; text-shadow: 0 0 20px #4d98c2; color: #d3fdff; font-family: cursive;">
+                
+                </div>
+            <script>
+                var currentYear;
+                var named;
+                var lastName;
+                var dateOfBirth;
+                var yearBirth
+                var age;
+                var country;
+                var employment;
+                var myRate;
+                named = `Mahmoud`;
+                lastName = `Hassan`;
+                dateOfBirth = `11 / 11 / 2006`;
+                yearBirth = 2006;
+                currentYear = 2021;
+                monthBirth = 11;
+                currentMonth = 10;
+                if(currentMonth < monthBirth){
+                    age =  currentYear - yearBirth -1;
+                }
+                else{
+                    age =  currentYear - yearBirth;
+                }
+                country = `Egypt`;
+                employment = `student`;
+                myRate = `7 / 10`;
+                document.getElementById(`description`).innerHTML = `Name: ${named} <br> Last Name: ${lastName} <br> 
+                                            Date of birth: ${dateOfBirth} <br> Age: ${age} <br> Country: ${country} <br> 
+                                                Employment: ${employment} <br> My rate: ${myRate}`;
+            </script>
+            </div>
+            <div class="userImgDiv">
+                <img class="userImg" src="Friendsphotos/mahmoudhassan.jpg">
+            </div>
+      
+        </div>
+    </div>
+</body>
+</html>

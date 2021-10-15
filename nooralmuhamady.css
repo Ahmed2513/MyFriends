@@ -1,0 +1,328 @@
+
+details summary::-webkit-details-marker {
+  background: url(Friendsphotos/menu.png) center no-repeat;
+
+}
+details[open] summary::-webkit-details-marker {
+  background: url(Friendsphotos/menu.png) center no-repeat;
+
+}
+
+:root {
+  --black: black;
+  --font: white;
+  --background: #282A35;
+}
+
+@font-face {
+  font-family: myfont12;
+  src: url('Fonts/iniya-display-font/IniyaDisplay-ow0Ra.otf');
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: var(--black);
+  overflow-x: hidden;
+  font-family: myfont12;
+}
+
+details summary::-webkit-details-marker {
+      background: url(Friendsphotos/menu.png);
+      background-repeat: no-repeat;
+}
+details[open] summary::-webkit-details-marker {
+      background: url(Friendsphotos/menu.png);
+      background-repeat: no-repeat;
+      animation-name: menu;
+      animation-duration: 1s;
+      animation-delay: 0s;
+}
+
+/* .nav{
+  top: 0px;
+  position: fixed;
+  background-color: #00000080;
+  font-size: 25px;
+  font-family: cursive;
+  width: 97%;
+  z-index: 100;
+  height: 7%;
+  margin: 0 1.5%;
+  box-shadow: 0 0 12px 5px black;
+  visibility: hidden;
+  animation-duration: 1s;
+  animation-name: example;
+  animation-fill-mode: forwards;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 3px;
+} */
+
+details{
+  height: 45px;
+  background-color: #282A35;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  z-index: 100;
+}
+
+.uli {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #282A35;
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+  overflow: hidden;
+  z-index: 1600;
+  left: 0;
+  top: 0;
+  height: 44px;
+  width: 100%;
+  display: inline-flex;
+  font-size: 17px;
+  color: #f1f1f1;
+  padding: 0;
+  letter-spacing: 1px;
+  box-shadow: -4px 2px 10px black, 0px -4px 20px 0px blue;
+  box-sizing: inherit;
+  border-bottom: 2px solid black;
+  align-items: center;
+  visibility: hidden;
+  animation-duration: 0.75s;
+  animation-name: example;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+
+.uli1{
+  visibility: hidden;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #282A35;
+    position: fixed;
+    overflow: auto;
+    overflow: hidden;
+    z-index: 1600;
+    left: 0;
+    top: 0;
+    height: 200px;
+    width: 142px;
+    display: flex;
+    font-size: 17px;
+    color: #f1f1f1;
+    padding: 0;
+    letter-spacing: 1px;
+    box-shadow: -4px 2px 10px black, 0px -4px 20px 0px blue;
+    box-sizing: inherit;
+    border-bottom: 2px solid black;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 35px;
+    margin-left: 35px;
+    animation-duration: 0.75s;
+    animation-name: example;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 12px 18px;
+  text-decoration: none;
+}
+li {
+  text-align: center;
+  /* border-bottom: 1px solid #005bff69; */
+  color: #f1f1f1;
+  font-size: 17px;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: black;
+
+  color: white;
+  
+}
+
+
+.active {
+  background-color: #004ad0;
+  /* color: white; */
+  /* font-size: 33px; */
+  border-bottom: darkblue solid 2px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 17px;
+  color: #f1f1f1;
+  /* height: 100%; */
+  height: 19px;
+  padding: 13px 20px;
+}
+.madeBy{
+  z-index: 1700;
+  position: fixed;
+  right: 0;
+  top: 0;
+  font-size: 17px;
+  /* padding: 6px; */
+  /* border-radius: 9px; */
+  /* border: solid blue 1px; */
+  color: white;
+  /* background-color: #0078b2; */
+  font-family: sans-serif;
+  border-bottom: solid 2px darkblue;
+  cursor: context-menu;
+  height: 19px;
+  padding: 11px 0px;
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  animation-duration: 0.75s;
+  animation-name: example;
+  animation-delay: 0.75s;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+.madeBy:hover{
+  background-color: black;
+  color: white;
+}
+
+.thing{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  /* color: black; */
+  padding: 9px 2px;
+  border-bottom: darkblue solid 2px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 17px;
+  color: #f1f1f1;
+  background-color: #004ad0;
+  letter-spacing: 1px;
+}
+
+#moon:hover{
+  animation-name: menu;
+  animation-duration: 1s;
+  animation-delay: 0s;
+}
+.img{
+  height: 100vh;
+  background-image: url("Friendsphotos/8lPke0r.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  visibility: hidden;
+  animation-duration: 1s;
+  animation-name: example;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@media only screen and (max-width: 897px){
+.img{
+  height: 100vh;
+}
+}
+
+.img-text {
+  position: absolute;
+  top: 0;
+  color: white;
+  font-size: 10px;
+  visibility: hidden;
+  animation-duration: 1s;
+  animation-name: example;
+  animation-fill-mode: forwards;
+  height: 100%;
+  animation-delay: 3s;
+  width: 96%;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media only screen and (max-width: 641px){
+  .img-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    top: 35px;
+  }
+  }
+
+.subTitle{
+      font-size: 26px;
+      color: #ff0092;
+}
+
+.userImg{
+    width: auto;
+    height: 282px;
+    border-radius: calc(282px/2);
+    border-right: solid blue 2px;
+    border-left: green solid 2px;
+    border-bottom: solid yellow 2px;
+    border-top: red solid 2px;
+    /* box-shadow: 9px 1px 20px blue; */
+    /* box-shadow: 0 0 yellow; */
+    box-shadow: 20px 0px 25px 0 #2196f3, 0px 20px 20px 0px #ffeb3b, -20px 0px 20px 0px #4caf50, 0px -20px 20px red;
+    background-color: white;
+}
+
+@media only screen and (max-width: 641px){
+  .userImg{
+    margin-top: 26px;
+  }
+  }
+
+@keyframes example {
+    0%
+    {
+        opacity: 0;
+        transform: translateX(-100px);
+        visibility: visible;
+    }
+
+    100% 
+    {
+        opacity: 1;
+        transform: translateX(0);
+        visibility: visible;
+    }
+
+  }
+
+@keyframes menu {
+    0%
+    {
+      transform: rotate(0deg);
+    }
+    76%{
+      transform: rotate(320deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}

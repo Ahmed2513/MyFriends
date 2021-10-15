@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="bestfriends.js"></script>
+    <link rel="shortcut icon" href="Friendsphotos/8lPke0r.jpg">
+    <title>Best Friends</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="bestfriends.css">
+    <script>
+         function passValues()
+    {   
+        var userInputValue = document.getElementById('inPut').value;
+                var userInput = userInputValue.toLowerCase();
+                var userInputNoSpacee = userInput.split(' ').join('');
+                console.log(userInput);
+                var bestFriends = ['Mahmoud' , 'Youssef' , 'Malak' , 'Seif' , 'Mahmoud' , 'Georges' , 'Brayen' , 'Noor' , 'Peter'];
+                const bestFriendsLower = bestFriends.map(function (name){
+                    return name.toLowerCase();
+                });
+                console.log(bestFriendsLower)
+                var bestFriendsLast = ['Hassan', 'Monir' , 'Soliman' , 'Monir' , 'Hozayen' , 'Adel' , 'Gerges' , 'Almuhamady' , 'Sameh'];
+                const bestFriendsLastLower = bestFriendsLast.map(function (name){
+                    return name.toLowerCase();
+                });
+                console.log(bestFriendsLastLower)
+                var i = 0;
+                var bestFriendsName = [];
+                while(i < 9)
+                {
+                    bestFriendsName[i] = bestFriends[i] + ' ' + bestFriendsLast[i]; 
+                    i++;
+                }
+                const bestFriendsNameLower = bestFriendsName.map(function(name){
+                    return name.toLowerCase();
+                });
+                console.log(bestFriendsName);
+                console.log(bestFriendsNameLower);
+                const bestFreindsNameNoSpace = bestFriendsNameLower.map(function(name){
+                    return name.split(' ').join('');
+                });
+                console.log(bestFreindsNameNoSpace);
+                console.log(`How many best friends do i have?? `);
+                console.log(`I have ${bestFriends.length}`);
+
+
+                var frinedsName = ['Seif' , 'Youssef' , ' Malak' , 'Mahmoud' , 'Brayen' , 'Georges' , 'Youssef' , 'Ahmed' , 'Adham' , 'Soliman' , 'Mostafa' , 'Ahmed' , 'Yasser' , 'Hassan' , 'Yassin' , 'Jana' , 'Rawya' , 'Mohamed' , 'Khalid' , 'Mourad' , 'Eman' , 'Mahmoud' , 'Rami' , 'Abdelwahab' , 'Salah' , 'Ghada' , 'Mourad' , 'Safwat' , 'Khalid' , 'Peter' , 'Raymond' , 'Amira' , 'Mazen' , 'Ismail', 'Youssef' , 'Ahmed' , 'Joseph' , 'Abdelrahman' , 'Moustafa' , 'Mohamed' , 'Hima' , 'Youusef' , 'Mohamed' , 'Abdallah' , 'Karim' , 'Georges' , 'Mora' , 'Ibrahim' , 'Roger' , 'Husain' , 'Tarek' , 'Ahmed' , 'Ahmed' , 'Noha' , 'Hamza' , 'Ahmed' , 'Ahmed' , 'Ahmed' , 'Mohamed' , 'Nabil' , 'Youssef' , 'Hicham' , 'Noor' , 'Mohab' , 'Nooreldine' , 'Mahmoud' , 'Youssef' , 'Mahmoud' , 'Ibrahim' , 'Mahmoud' , 'Noor' , 'Hozayen' , 'Amen' , 'Marianne'];
+                const frinedsNameLower = frinedsName.map(name => name.toLowerCase());
+                console.log(frinedsNameLower);
+                console.log(frinedsNameLower.length)
+
+
+                var friendsNameLast = ['Monir' , 'Monir' , 'Soliman' , 'Hassan' , 'Gerges' , 'Adel' , 'Azab' , 'Mohamed' , 'Ossama' , 'Gobrial' , 'Khedr' , 'Farid' , 'Gaber' , 'Mohamed' , 'Aghoury' , 'Madian' , 'Ali' , 'Bahgat' , 'Ashraf' , 'Amin' , 'Bahgat' , 'Hozayen' , 'Raafat' , 'Soliman' , 'Ahmed' , 'Ez' , 'Nabil' , 'Osman' , 'Farouk' , 'Sameh' , 'Youakim' , 'Bahgat' , 'Hicham' , 'Shahin' , 'Tamer' , 'Ali' , 'Hani' , 'Elsaeed' , 'Mahmoud' , 'Hany' , 'Emad' , 'El Hussieny' , 'Shokery' , 'Tarek' , 'Mahmoud' , 'Absi' , 'Medhat' , 'Hany', 'Yasser' , 'Wafaie' , 'Youssef' , 'Tarek' , 'Mohamed' , 'Amin' , 'Yosry' , 'Rahmo' , ' Hecham' , 'Mohamed' , 'Aly' , 'Nader' , 'Adel' , 'Fouad' , 'Almuhamady' , 'Mohamed' , 'Ahmed' , 'Hassan' , 'Fahmy' , 'Hassan' , 'Abdeaziz' , 'Hassan' , 'Gad' , 'Hozayen' , 'Hazem' , 'El Komos'];
+                const friendsNameLastLower = friendsNameLast.map(name => name.toLowerCase());
+                console.log(friendsNameLastLower);
+                console.log(friendsNameLastLower.length);
+
+
+                var friendsNameTotal = [];
+                i = 0;
+                while(i < 74)
+                {
+                    friendsNameTotal[i] = frinedsName[i]  + ' ' + friendsNameLast[i];
+                    i++;
+                };
+                const friendsNameTotalLower = friendsNameTotal.map(function(name){
+                    return name.toLowerCase();
+                });
+                const friendsNameTotalNoSpace = friendsNameTotalLower.map(function(name){
+                    return name.split(' ').join('');
+                });
+                console.log(friendsNameTotalNoSpace);
+
+            
+
+
+                if(bestFreindsNameNoSpace.includes(userInput.split(' ').join('')) === true)
+                {
+                    var x = bestFreindsNameNoSpace.indexOf(userInputNoSpacee);
+                    console.log(x);
+                    window.alert(`Hello ${bestFriendsName[x]} you are from my best friends : ) `);
+                    // document.getElementById('bfriendSLink').innerHTML = `<a href='${userInputNoSpacee.toLowerCase()}'></a>`;
+                    document.getElementById('formImg').innerHTML = `<img src='Friendsphotos/—Pngtree—true sign png_4863856.png' style='height: 50px; width: auto; display: inherit; position: absolute; right: 0; top: 0'>`;
+                    window.open(`${bestFreindsNameNoSpace[x]}.html`);
+                }
+                else if(friendsNameTotalNoSpace.includes(userInput.split(' ').join('')) === true){
+                    window.alert(`Sorry but you are not from my best friends. \n If you want we can be : )`)
+                }
+                else
+                {
+                    n = 0;
+                    while(n < 6){
+                        window.alert(`You are not a friend of mine!!`);
+                        n++;
+                    }
+
+                }
+
+    }
+    </script>
+</head>
+<body>
+    <div class="img"></div>
+     <div class="navTrial" id="navT">
+        <details>
+            <summary style="font-size: 32px; margin: auto; height: 100%; margin-left: 8px; font-family: system-ui;">
+                  More
+            </summary> 
+            <ul class="uli1">
+                <li><a href="home.html">Home</a></li>    
+                <li><a href="index.html">Login</a></li>
+                <li><a href="bestfriends.html" class="active">Best friends</a></li>    
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </details>
+    <!-- </ul> -->
+    </div>
+    <script>
+        var someNav = document.getElementById('navT')
+        function myFunctionm(xty) {
+            if (xty.matches) {
+                someNav.innerHTML = '<details>  <summary> <img src="Friendsphotos/menuWhite.png"  class="moon" alt="moon" style="    width: 32px; background: transparent; position: fixed; top: 0; z-index: 400; left: 0; cursor: pointer; border: solid white 3px; border-radius: 20px; padding: 1px; margin-top: 2px; height: 32px;"> </summary> <ul class="uli1"><li><a href="home.html">Home</a></li>    <li><a href="index.html">Login</a></li> <li><a href="bestfriends.html" class="active">Best friends</a></li> <li><a href="about.html">About</a></li> </ul>  </details>';
+            }
+            else{
+                someNav.innerHTML = '<ul class="uli"> <li><a href="home.html">Home</a></li> <li><a href="index.html">Login</a></li> <li><a href="bestfriends.html" class="active">Best friends</a></li> <li><a href="about.html">About</a></li> </ul>';
+            } 
+        }
+        var xty = window.matchMedia("(max-width: 664px)");
+        myFunctionm(xty);
+        xty.addListener(myFunctionm);
+    
+    </script>
+    <div class="">
+            <ul class="madeBy">
+                <li class="thing">
+                    <img src="Friendsphotos/homeicon.png" style="height: 30px; border-radius: 15px; margin: 0 5px;">
+                    <span id="result"></span> 
+                    <script>
+                        document.getElementById("result").innerHTML = localStorage.getItem("textvalue");
+                    </script>
+                </li>
+            </ul>
+    </div>
+    <!-- <div class="imgdiv">
+        <div class="form">
+            <img src="Friendsphotos/585e4be1cb11b227491c3398.png" class="imgAccount">
+            <textarea id="textArea" placeholder="Please Enter Your Name!!" maxlength="22" rows="1" cols="30" ></textarea><br>
+            <span id="formImg">
+            </span>
+        </div>
+        <button class="button"
+            onclick=
+            "
+                var userInputValue = document.getElementById('textArea').value;
+                var userInput = userInputValue.toLowerCase();
+                var userInputNoSpacee = userInput.split(' ').join('');
+                console.log(userInput);
+                var bestFriends = ['Mahmoud' , 'Youssef' , 'Malak' , 'Seif' , 'Mahmoud' , 'Georges' , 'Brayen' , 'Noor' , 'Peter'];
+                const bestFriendsLower = bestFriends.map(function (name){
+                    return name.toLowerCase();
+                });
+                console.log(bestFriendsLower)
+                var bestFriendsLast = ['Hassan', 'Monir' , 'Soliman' , 'Monir' , 'Hozayen' , 'Adel' , 'Gerges' , 'Almuhamady' , 'Sameh'];
+                const bestFriendsLastLower = bestFriendsLast.map(function (name){
+                    return name.toLowerCase();
+                });
+                console.log(bestFriendsLastLower)
+                var i = 0;
+                var bestFriendsName = [];
+                while(i < 9)
+                {
+                    bestFriendsName[i] = bestFriends[i] + ' ' + bestFriendsLast[i]; 
+                    i++;
+                }
+                const bestFriendsNameLower = bestFriendsName.map(function(name){
+                    return name.toLowerCase();
+                });
+                console.log(bestFriendsName);
+                console.log(bestFriendsNameLower);
+                const bestFreindsNameNoSpace = bestFriendsNameLower.map(function(name){
+                    return name.split(' ').join('');
+                });
+                console.log(bestFreindsNameNoSpace);
+                console.log(`How many best friends do i have?? `);
+                console.log(`I have ${bestFriends.length}`);
+
+
+                var frinedsName = ['Seif' , 'Youssef' , ' Malak' , 'Mahmoud' , 'Brayen' , 'Georges' , 'Youssef' , 'Ahmed' , 'Adham' , 'Soliman' , 'Mostafa' , 'Ahmed' , 'Yasser' , 'Hassan' , 'Yassin' , 'Jana' , 'Rawya' , 'Mohamed' , 'Khalid' , 'Mourad' , 'Eman' , 'Mahmoud' , 'Rami' , 'Abdelwahab' , 'Salah' , 'Ghada' , 'Mourad' , 'Safwat' , 'Khalid' , 'Peter' , 'Raymond' , 'Amira' , 'Mazen' , 'Ismail', 'Youssef' , 'Ahmed' , 'Joseph' , 'Abdelrahman' , 'Moustafa' , 'Mohamed' , 'Hima' , 'Youusef' , 'Mohamed' , 'Abdallah' , 'Karim' , 'Georges' , 'Mora' , 'Ibrahim' , 'Roger' , 'Husain' , 'Tarek' , 'Ahmed' , 'Ahmed' , 'Noha' , 'Hamza' , 'Ahmed' , 'Ahmed' , 'Ahmed' , 'Mohamed' , 'Nabil' , 'Youssef' , 'Hicham' , 'Noor' , 'Mohab' , 'Nooreldine' , 'Mahmoud' , 'Youssef' , 'Mahmoud' , 'Ibrahim' , 'Mahmoud' , 'Noor' , 'Hozayen' , 'Amen' , 'Marianne'];
+                const frinedsNameLower = frinedsName.map(name => name.toLowerCase());
+                console.log(frinedsNameLower);
+                console.log(frinedsNameLower.length)
+
+
+                var friendsNameLast = ['Monir' , 'Monir' , 'Soliman' , 'Hassan' , 'Gerges' , 'Adel' , 'Azab' , 'Mohamed' , 'Ossama' , 'Gobrial' , 'Khedr' , 'Farid' , 'Gaber' , 'Mohamed' , 'Aghoury' , 'Madian' , 'Ali' , 'Bahgat' , 'Ashraf' , 'Amin' , 'Bahgat' , 'Hozayen' , 'Raafat' , 'Soliman' , 'Ahmed' , 'Ez' , 'Nabil' , 'Osman' , 'Farouk' , 'Sameh' , 'Youakim' , 'Bahgat' , 'Hicham' , 'Shahin' , 'Tamer' , 'Ali' , 'Hani' , 'Elsaeed' , 'Mahmoud' , 'Hany' , 'Emad' , 'El Hussieny' , 'Shokery' , 'Tarek' , 'Mahmoud' , 'Absi' , 'Medhat' , 'Hany', 'Yasser' , 'Wafaie' , 'Youssef' , 'Tarek' , 'Mohamed' , 'Amin' , 'Yosry' , 'Rahmo' , ' Hecham' , 'Mohamed' , 'Aly' , 'Nader' , 'Adel' , 'Fouad' , 'Almuhamady' , 'Mohamed' , 'Ahmed' , 'Hassan' , 'Fahmy' , 'Hassan' , 'Abdeaziz' , 'Hassan' , 'Gad' , 'Hozayen' , 'Hazem' , 'El Komos'];
+                const friendsNameLastLower = friendsNameLast.map(name => name.toLowerCase());
+                console.log(friendsNameLastLower);
+                console.log(friendsNameLastLower.length);
+
+
+                var friendsNameTotal = [];
+                i = 0;
+                while(i < 74)
+                {
+                    friendsNameTotal[i] = frinedsName[i]  + ' ' + friendsNameLast[i];
+                    i++;
+                };
+                const friendsNameTotalLower = friendsNameTotal.map(function(name){
+                    return name.toLowerCase();
+                });
+                const friendsNameTotalNoSpace = friendsNameTotalLower.map(function(name){
+                    return name.split(' ').join('');
+                });
+                console.log(friendsNameTotalNoSpace);
+
+            
+
+
+                if(bestFreindsNameNoSpace.includes(userInput.split(' ').join('')) === true)
+                {
+                    var x = bestFreindsNameNoSpace.indexOf(userInputNoSpacee);
+                    console.log(x);
+                    window.alert(`Hello ${bestFriendsName[x]} you are from my best friends : ) `);
+                    // document.getElementById('bfriendSLink').innerHTML = `<a href='${userInputNoSpacee.toLowerCase()}'></a>`;
+                    document.getElementById('formImg').innerHTML = `<img src='Friendsphotos/—Pngtree—true sign png_4863856.png' style='height: 50px; width: auto; display: inherit;'></button>`;
+                    window.open(`${bestFreindsNameNoSpace[x]}.html`);
+                }
+                else if(friendsNameTotalNoSpace.includes(userInput.split(' ').join('')) === true){
+                    window.alert(`Sorry but you are not from my best friends. \n If you want we can be : )`)
+                }
+                else
+                {
+                    n = 0;
+                    while(n < 6){
+                        window.alert(`You are not a friend of mine!!`);
+                        n++;
+                    }
+
+                }
+            ">
+            Check if you are from my best friends
+        </button><br>
+        <div id="bfriendSLink">
+            
+        </div>
+    </div> -->
+    <div class="wrapper" id="imgdiv">
+            <header>Best Friends Login</header>
+            <form action="#">
+            <div class="field email">
+                <div class="input-area" style="display: inline-flex; align-items: center; justify-content: center;">
+                <span id="thisBspan">
+                    <img src="Friendsphotos/homeicon.png" style="border-radius: 25px; width: 35px; height: 35px;  position: absolute; left: 0; top: 0; margin: 7.5px 5px;">
+                </span>
+                <input id="inPut" type="text" placeholder="First and Last Name">
+                <span id="formImg">
+                </span>
+                <i class="icon fas fa-envelope"></i>
+                <i class="error error-icon fas fa-exclamation-circle"></i>
+                </div>
+            <!-- <div class="error error-txt">Name can't be blank</div> -->
+            </div>
+          
+            <script>
+                var input = document.getElementById('inPut');
+                var imgTargeted = document.getElementById('thisBspan');
+                input.onfocus = function(){
+                    imgTargeted.innerHTML = '<img src="Friendsphotos/homeiconblue.png" style=" border-radius: 15px; width: 35px; height: 35px;  position: absolute; left: 0; top: 0; margin: 7.5px 5px;">'
+                    console.log(`I'm ok`);
+                }
+                input.onblur = function(){
+                    imgTargeted.innerHTML = '<img src="Friendsphotos/homeicon.png" style="border-radius: 25px; width: 35px; height: 35px;  position: absolute; left: 0; top: 0; margin: 7.5px 5px;">'
+                    console.log(`I'm ok`);
+                }
+                var input = document.getElementById('inPut');
+                if (input == document.activeElement){
+                var imgTargeted = input.querySelector('span');
+                imgTargeted.innerHTML = '<img src="Friendsphotos/homeiconblue.png" style="border-radius: 25px; width: 35px; height: 35px;  position: absolute; left: 0; top: 0; margin: 7.5px 5px;">'
+                console.log(`I'm not ok`)
+                }
+            // else if(input.onfocus = function() ){
+            //   document
+            // }
+                else{
+                console.log(`I'm not fine totaly`);
+                }
+            </script>
+    
+            <input type="submit" value="Login" onclick="passValues()" class="button" style="width: 100%;">
+            </form>
+            <div class="sign-txt" style="color: white;"><span style="color: white;">Not yet member?</span> <a href="#">Signup now</a></div>
+    </div>
+</body>
+</html>

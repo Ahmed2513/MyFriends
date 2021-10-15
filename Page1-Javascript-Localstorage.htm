@@ -1,0 +1,28 @@
+<html>
+<head>
+    <script>
+        function passValues()
+        {
+            var firstname = document.getElementById("txt").value;
+            localStorage.setItem("textvalue" , firstname);
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <h1>
+            How to pass variables from one page to author padge html
+        </h1>
+        <h2>
+            Using Local storage with javascript !
+        </h2>
+        <hr>
+        <form action="Page2-Javascript-Localstorage.htm">
+            <input type="text" id="txt">
+            <input type="submit" value="Click" onclick="passValues()">
+        </form>
+    </center>
+</body>
+    
+</html>
