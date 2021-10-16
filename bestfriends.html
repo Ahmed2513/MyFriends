@@ -79,11 +79,13 @@
                 if(bestFreindsNameNoSpace.includes(userInput.split(' ').join('')) === true)
                 {
                     var x = bestFreindsNameNoSpace.indexOf(userInputNoSpacee);
+                    var headingToPage = document.getElementById('headingToPage');
                     console.log(x);
                     document.getElementById('formImg').innerHTML = `<img src='Friendsphotos/—Pngtree—true sign png_4863856.png' style='height: 50px; width: auto; display: inherit; position: absolute; right: 0; top: 0; animation-name: menu; animation-duration: 1s; animation-delay: 0s;'>`;
-                    var headingToPage = document.getElementById('headingToPage');
-                    headingToPage.innerHTML=  `<a href=${bestFreindsNameNoSpace[x]}.html> Go To Your Page </a>`;
                     window.alert(`Hello ${bestFriendsName[x]} you are from my best friends : ) `);
+                    headingToPage.innerHTML=  `<a href=${bestFreindsNameNoSpace[x]}.html> Go To Your Page </a>`;
+                    window,open(`${bestFreindsNameNoSpace[x]}.html`);
+
                 }
                 else if(friendsNameTotalNoSpace.includes(userInput.split(' ').join('')) === true){
                     window.alert(`Sorry but you are not from my best friends. \n If you want we can be : )`)
@@ -91,7 +93,7 @@
                 else
                 {
                     n = 0;
-                    while(n < 6){
+                    while(n < 3){
                         window.alert(`You are not a friend of mine!!`);
                         n++;
                     }
@@ -105,15 +107,28 @@
     <div class="img"></div>
      <div class="navTrial" id="navT">
         <details>
-            <summary style="font-size: 32px; margin: auto; height: 100%; margin-left: 8px; font-family: system-ui;">
-                  More
-            </summary> 
+            <summary style="background-color: #080808;">
+                <img src="Friendsphotos/menuWhite.png"  id="moon" class="moon" alt="moon" style="
+                    width: 35px;
+                    height: 35px;
+                    background: transparent;
+                    position: fixed;
+                    top: 0;
+                    z-index: 400;
+                    left: 0;
+                    cursor: pointer;
+                    padding: 3px;
+                    border: solid white 2px;
+                    border-radius: 26px;
+                    margin-top: 2px;
+                ">
+            </summary>
             <ul class="uli1">
-                <li><a href="home.html">Home</a></li>    
+                <li><a href="home.html" class="active">Home</a></li>    
                 <li><a href="index.html">Login</a></li>
-                <li><a href="bestfriends.html" class="active">Best friends</a></li>    
+                <li><a href="bestfriends.html">Best friends</a></li>    
                 <li><a href="about.html">About</a></li>
-            </ul>
+            </ul>  
         </details>
     <!-- </ul> -->
     </div>
