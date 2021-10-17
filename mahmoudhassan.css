@@ -18,7 +18,8 @@ body{
   margin: 0;
   padding: 0;
   background-color: var(--black);
-  overflow-x: hidden;
+  overflow: hidden;
+  font-family: myfont12;
 }
 
 details summary::-webkit-details-marker {
