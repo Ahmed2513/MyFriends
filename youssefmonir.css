@@ -14,11 +14,17 @@ details[open] summary::-webkit-details-marker {
   --background: #282A35;
 }
 
+@font-face {
+  font-family: myfont12;
+  src: url('Fonts/iniya-display-font/IniyaDisplay-ow0Ra.otf');
+}
+
 body{
   margin: 0;
   padding: 0;
   background-color: var(--black);
   overflow: hidden;
+  font-family: myfont12;
 }
 
 details summary::-webkit-details-marker {
