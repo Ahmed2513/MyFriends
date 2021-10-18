@@ -293,7 +293,62 @@ details[open] summary::-webkit-details-marker {
 
 }
 
-@media only screen and (max-width: 420px){
+
+@media only screen and (max-width: 1010px){
+  .img-text{
+    left: 30%;
+  }
+}
+
+@media only screen and (max-width: 833px){
+  .img-text{
+    left: 24%;
+  }
+}
+
+@media only screen and (max-width: 690px){
+  .img-text{
+    left: 16%;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .img-text{
+    left: 12%;
+  }
+}
+
+@media only screen and (max-width: 540px){
+  .img-text{
+    left: 8%;
+  }
+}
+
+@media only screen and (max-width: 490px){
+  .img-text{
+    left: 6%;
+  }
+}
+
+@media only screen and (max-width: 469px){
+  .img-text{
+    left: 4%;
+  }
+}
+
+@media only screen and (max-width: 450px){
+  .img-text{
+    left: 3%;
+  }
+}
+
+@media only screen and (max-width: 439px){
+  .img-text{
+    left: 2%;
+  }
+}
+
+@media only screen and (max-width: 430px){
   .img-text{
     left: 1%;
   }
