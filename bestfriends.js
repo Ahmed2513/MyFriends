@@ -2,12 +2,12 @@ var bestFriends = ["Mahmoud" , "Youssef" , "Malak" , "Seif" , "Mahmoud" , "Georg
 const bestFriendsLower = bestFriends.map(function (name){
     return name.toLowerCase();
 });
-console.log(bestFriendsLower)
+
 var bestFriendsLast = ["Hassan", "Monir" , "Soliman" , "Monir" , "Hozayen" , "Adel" , "Gerges" , "Almuhamady" , "Sameh"];
 const bestFriendsLastLower = bestFriendsLast.map(function (name){
     return name.toLowerCase();
 });
-console.log(bestFriendsLastLower)
+
 var i = 0;
 var bestFriendsName = [];
 while(i < 9)
@@ -18,11 +18,7 @@ while(i < 9)
 const bestFriendsNameLower = bestFriendsName.map(function(name){
     return name.toLowerCase();
 });
-console.log(bestFriendsName);
-console.log(bestFriendsNameLower);
+
 const bestFreindsNameNoSpace = bestFriendsNameLower.map(function(name){
     return name.split(' ').join('');
 });
-console.log(bestFreindsNameNoSpace)
-console.log(`How many best friends do i have?? `);
-console.log(`I have ${bestFriends.length}`);
