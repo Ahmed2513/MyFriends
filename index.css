@@ -244,7 +244,7 @@ form .pass-txt{
 }
 form input[type="submit"]{
   height: 50px;
-  margin-top: 30px;
+  margin-top: 10px;
   color: #fff;
   padding: 0;
   border: none;
