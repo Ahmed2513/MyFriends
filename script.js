@@ -1,4 +1,50 @@
 
+        var r = document.querySelector(':root');
+        var t = document.querySelector(':root');
+        var b = document.querySelector(':root');
+        var s = document.querySelector(':root');
+        var h = document.querySelector(':root');
+        var g = document.querySelector(':root');
+        var q = document.querySelector(':root');
+   
+    /*  
+        --activeBottom: #191919d1; 
+        --disactiveBottom: #727272;
+        --activeBottomHover: black;
+        --disactiveBottomHover: #585858;
+    */
+        // Create a function for getting a variable value
+        function myFunction_get() {
+          // Get the styles (properties and values) for the root
+          var rs = getComputedStyle(r);
+          // Alert the value of the --blue variable
+        }
+
+        // Create a function for setting a variable value
+        function myFunction_set() {
+          // Set the value of variable --blue to another value (in this case "lightblue")
+          r.style.setProperty('--black', 'white');
+          t.style.setProperty('--font' , 'black');
+          b.style.setProperty('--background' , 'white');
+          s.style.setProperty('--activeBottom' , '#191919d1');
+          h.style.setProperty('--disactiveBottom' , '#727272');
+          g.style.setProperty('--activeBottomHover' , 'black');
+          q.style.setProperty('--disactiveBottomHover' , '#585858');
+          darkLight.innerHTML = '<button onclick="myFunctionBlack_set() " style=" background: transparent; border: none;"> <img src="Friendsphotos/moonWhite.png" style=" height: 31px; border-radius: 51px; padding: 4px;" id="moon"> </button>'
+        }
+
+        function myFunctionBlack_set() {
+          // Set the value of variable --blue to another value (in this case "lightblue")
+          r.style.setProperty('--black', 'black');
+          t.style.setProperty('--font' , 'white');
+          b.style.setProperty('--background' , 'black');
+          s.style.setProperty('--activeBottom' , '#ffffffd1');
+          h.style.setProperty('--disactiveBottom' , '#ffffff8f');
+          g.style.setProperty('--activeBottomHover' , 'white');
+          q.style.setProperty('--disactiveBottomHover' , '#ffffffba');
+          darkLight.innerHTML = '    <button onclick="myFunction_set()" style="    background: transparent; border: none;"> <img src="Friendsphotos/sunWhite.png" style=" height: 31px; border-radius: 51px; padding: 4px;" id="moon"> </button>'
+        }
+
 //     // const EFFECT2 = document.querySelector("#effect2");
     
     
