@@ -6,9 +6,9 @@
   <title>Login</title>
   <link rel="stylesheet" href="index.css">
   <link rel="shortcut icon" href="Friendsphotos/8lPke0r.jpg">
-<!--   <script>
-<!--     function passValues()
-<!--     {
+  <script>
+    function passValues()
+    {
         var frinedsName = ['Seif' , 'Youssef' , ' Malak' , 'Mahmoud' , 'Brayen' , 'Georges' , 'Youssef' , 'Ahmed' , 'Adham' , 'Soliman' , 'Mostafa' , 'Ahmed' , 'Yasser' , 'Hassan' , 'Yassin' , 'Jana' , 'Rawya' , 'Mohamed' , 'Khalid' , 'Mourad' , 'Eman' , 'Mahmoud' , 'Rami' , 'Abdelwahab' , 'Salah' , 'Ghada' , 'Mourad' , 'Safwat' , 'Khalid' , 'Peter' , 'Raymond' , 'Amira' , 'Mazen' , 'Ismail', 'Youssef' , 'Ahmed' , 'Joseph' , 'Abdelrahman' , 'Moustafa' , 'Mohamed' , 'Hima' , 'Youusef' , 'Mohamed' , 'Abdallah' , 'Karim' , 'Georges' , 'Mora' , 'Ibrahim' , 'Roger' , 'Husain' , 'Tarek' , 'Ahmed' , 'Ahmed' , 'Noha' , 'Hamza' , 'Ahmed' , 'Ahmed' , 'Ahmed' , 'Mohamed' , 'Nabil' , 'Youssef' , 'Hicham' , 'Noor' , 'Mohab' , 'Noureldine' , 'Mahmoud' , 'Youssef' , 'Mahmoud' , 'Ibrahim' , 'Mahmoud' , 'Nour' , 'Hozayen' , 'Amen' , 'Marianne'];
         const frinedsNameLower = frinedsName.map(name => name.toLowerCase());
         console.log(frinedsNameLower);
@@ -30,10 +30,10 @@
         }
         
         const friendsNameTotalLower = friendsNameTotal.map(name => name.toLowerCase());
-        var   friendsNameTotalNoSpace = friendsNameTotalLower.map(name => name.split(' ').join('')); -->
+        var   friendsNameTotalNoSpace = friendsNameTotalLower.map(name => name.split(' ').join(''));
         
         
-<!--         var schoolFriends = ['Brayen' , 'Malak' , 'Yousef' , 'Georges' , 'Soliman' , 'Mourad' , 'Peter' , 'Youssef' ,'Moustafa' , 'Hima' , 'Karim' , 'Roger' , 'Karim' , 'Ahmed' , 'Mohamed' , 'Nabil', 'Youssef' , 'Hicham' , 'Noureldine' , 'Nour'];
+        var schoolFriends = ['Brayen' , 'Malak' , 'Yousef' , 'Georges' , 'Soliman' , 'Mourad' , 'Peter' , 'Youssef' ,'Moustafa' , 'Hima' , 'Karim' , 'Roger' , 'Karim' , 'Ahmed' , 'Mohamed' , 'Nabil', 'Youssef' , 'Hicham' , 'Noureldine' , 'Nour'];
         const schoolFriendsLower = schoolFriends.map(name => name.toLowerCase());
         console.log(schoolFriendsLower);
         
@@ -81,8 +81,8 @@
         let m = 0;
         var schoolTeachresLastName = ['El Komos' , 'Edouard' , 'Rafat' , 'Amin' , 'Khedr' , 'Absi'];
         const schoolTeachersLastNameLower = schoolTeachresLastName.map(name => name.toLowerCase());
-        console.log(schoolTeachersLastNameLower); -->
-<!--         userNameNoSpace = userName1.split(' ').join('');
+        console.log(schoolTeachersLastNameLower);
+        userNameNoSpace = userName1.split(' ').join('');
         userName = userNameNoSpace.toLowerCase();
         console.log(friendsNameTotal);
             if(friendsNameTotalNoSpace.includes(userName) === true)
@@ -115,8 +115,7 @@
                 }
             }
     }
-</script>  -->
-  <script src="index.js"></script>
+</script>
 </head>
 <body>
   <div class="wrapper" id="imgdiv">
@@ -134,7 +133,7 @@
         <!-- <div class="error error-txt">Name can't be blank</div> -->
       </div>
       
-<!--       <script>
+      <script>
           var input = document.getElementById('inPut');
           var imgTargeted = document.getElementById('thisBspan');
           input.onfocus = function(){
@@ -157,7 +156,7 @@
         else{
           console.log(`I'm not fine totaly`);
         }
-      </script> -->
+      </script>
 
       <input type="submit" value="Login" onclick="passValues()" class="button">
     </form>
