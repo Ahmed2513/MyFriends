@@ -12,17 +12,17 @@
         <script>
          function passValues()
     {   
-        var userInputValue = document.getElementById('inPut').value;
-        var userInputVluea = document.getElementById('inPuta').value;
-        var userInputValuea = parseInt(userInputVluea)
-        var userInput = userInputValue.toLowerCase();
-        var userInputNoSpacee = userInput.split(' ').join('');
-        var bestFriend = 'Noor';
-        var bestFriendLast = 'Almuhamady';
-        var bestFriendName = bestFriend + ' ' + bestFriendLast;
-        var bestFriendNameNoSpae = bestFriend + bestFriendLast;
-        var bestFriendNameNoSpace = bestFriendNameNoSpae.split(' ').join('');
-        var bestFriendNameLower = bestFriendNameNoSpace.toLowerCase();
+//         var userInputValue = document.getElementById('inPut').value;
+//         var userInputVluea = document.getElementById('inPuta').value;
+//         var userInputValuea = parseInt(userInputVluea)
+//         var userInput = userInputValue.toLowerCase();
+//         var userInputNoSpacee = userInput.split(' ').join('');
+//         var bestFriend = 'Noor';
+//         var bestFriendLast = '.....';
+//         var bestFriendName = bestFriend + ' ' + bestFriendLast;
+//         var bestFriendNameNoSpae = bestFriend + bestFriendLast;
+//         var bestFriendNameNoSpace = bestFriendNameNoSpae.split(' ').join('');
+//         var bestFriendNameLower = bestFriendNameNoSpace.toLowerCase();
     
                 var userInput = userInputValue.toLowerCase();
                 var userInputNoSpacee = userInput.split(' ').join('');
@@ -83,7 +83,7 @@
             
 
 
-                if(bestFreindsNameNoSpace.includes(userInput.split(' ').join('')) === true)
+                if(bestFreindsNameNoSpace.includes(userInput.split(' ').join('')) === true && userInputValuea === 2528)
                 {
                     var x = bestFreindsNameNoSpace.indexOf(userInputNoSpacee);
                     var headingToPage = document.getElementById('headingToPage');
@@ -91,23 +91,30 @@
                     document.getElementById('formImg').innerHTML = `<img src='Friendsphotos/—Pngtree—true sign png_4863856.png' style='height: 50px; width: auto; display: inherit; position: absolute; right: 0; top: 0; animation-name: menu; animation-duration: 1s; animation-delay: 0s;'>`;
                     window.alert(`Hello ${bestFriendsName[x]} you are from my best friends : ) `);
                     headingToPage.innerHTML=  `<a href=${bestFreindsNameNoSpace[x]}.html> Go To Your Page </a>`;
-                    window,open(`${bestFreindsNameNoSpace[x]}.html`);
+                    window.open(`${bestFreindsNameNoSpace[x]}.html`);
 
                 }
-                else if(bestFriendNameLower.includes(userInput.split(' ').join('')) === true && userInputValuea === 2528)
-                {
-                    var y = bestFriendNameLower.indexOf(userInputNoSpacee);
-                    var headingToPage = document.getElementById('headingToPage');
+//                 else if(bestFriendNameLower.includes(userInput.split(' ').join('')) === true && userInputValuea === 2528)
+//                 {
+//                     var y = bestFriendNameLower.indexOf(userInputNoSpacee);
+//                     var headingToPage = document.getElementById('headingToPage');
                
-                    document.getElementById('formImg').innerHTML = `<img src='Friendsphotos/—Pngtree—true sign png_4863856.png' style='height: 50px; width: auto; display: inherit; position: absolute; right: 0; top: 0; animation-name: menu; animation-duration: 1s; animation-delay: 0s;'>`;
-                    window.alert(`Hello ${bestFriendName} you are from my best friends : ) `);
-                    headingToPage.innerHTML=  `<a href=${bestFriendName}.html> Go To Your Page </a>`;
-                    window.open(`${bestFriendNameLower}.html`);
+//                     document.getElementById('formImg').innerHTML = `<img src='Friendsphotos/—Pngtree—true sign png_4863856.png' style='height: 50px; width: auto; display: inherit; position: absolute; right: 0; top: 0; animation-name: menu; animation-duration: 1s; animation-delay: 0s;'>`;
+//                     window.alert(`Hello ${bestFriendName} you are from my best friends : ) `);
+//                     headingToPage.innerHTML=  `<a href=${bestFriendName}.html> Go To Your Page </a>`;
+//                     window.open(`${bestFriendNameLower}.html`);
+//                 }
+        
+                else if(bestFreindsNameNoSpace.includes(userInput.split(' ').join('')) === true)
+                {
+                   window.alert(`Hello ${bestFriendsName[x]} you are from my best friends : ) `);
                 }
-             
-                else if(friendsNameTotalNoSpace.includes(userInput.split(' ').join('')) === true){
+        
+                else if(friendsNameTotalNoSpace.includes(userInput.split(' ').join('')) === true)
+                {
                     window.alert(`Sorry but you are not from my best friends. \n If you want we can be : )`)
                 }
+        
                 else
                 {
                     n = 0;
@@ -115,7 +122,6 @@
                         window.alert(`You are not a friend of mine!!`);
                         n++;
                     }
-
                 }
 
     }
