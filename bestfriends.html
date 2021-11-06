@@ -12,11 +12,11 @@
         <script>
          function passValues()
     {   
-//         var userInputValue = document.getElementById('inPut').value;
+        var userInputValue = document.getElementById('inPut').value;
 //         var userInputVluea = document.getElementById('inPuta').value;
 //         var userInputValuea = parseInt(userInputVluea)
-//         var userInput = userInputValue.toLowerCase();
-//         var userInputNoSpacee = userInput.split(' ').join('');
+        var userInput = userInputValue.toLowerCase();
+        var userInputNoSpacee = userInput.split(' ').join('');
 //         var bestFriend = 'Noor';
 //         var bestFriendLast = '.....';
 //         var bestFriendName = bestFriend + ' ' + bestFriendLast;
@@ -107,7 +107,7 @@
         
                 else if(bestFreindsNameNoSpace.includes(userInput.split(' ').join('')) === true)
                 {
-                   window.alert(`Hello ${bestFriendsName[x]} you are from my best friends : ) `);
+                   window.alert(`Password is incorrect for user ${bestFriendsName[x]}  `);
                 }
         
                 else if(friendsNameTotalNoSpace.includes(userInput.split(' ').join('')) === true)
