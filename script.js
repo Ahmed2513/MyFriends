@@ -45,41 +45,6 @@
           darkLight.innerHTML = '    <button onclick="myFunction_set()" style="    background: transparent; border: none;"> <img src="Friendsphotos/sunWhite.png" style=" height: 31px; border-radius: 51px; padding: 4px;" id="moon"> </button>'
         }
 
-
-
-
-
-
-
-
-
-
-
-
-         var someNav = document.getElementById('navT')
-                function myFunctionm(xty) {
-                    if (xty.matches) {
-                        someNav.innerHTML = '<details>  <summary style="background-color: #080808;"> <img src="Friendsphotos/menuWhite.png" alt="moon" style=" width: 35px; height: 35px; background: transparent; position: fixed; top: 0; z-index: 400; left: 0; cursor: pointer; padding: 3px; border: solid white 2px; border-radius: 26px; margin-top: 2px;"  id="moon"> </summary style="background-color: balck;"> <ul class="uli1"><li><a href="home.html" class="active">Home</a></li>    <li><a href="index.html">Login</a></li> <li><a href="bestfriends.html">Best friends</a></li> <li><a href="about.html">About</a></li> </ul>  </details>';
-                    }
-                    else{
-                        someNav.innerHTML = '<ul class="uli"> <li><a href="home.html" class="active">Home</a></li> <li><a href="index.html">Login</a></li> <li><a href="bestfriends.html">Best friends</a></li> <li><a href="about.html">About</a></li> </ul>';
-                    } 
-                }
-                var xty = window.matchMedia("(max-width: 664px)");
-                myFunctionm(xty);
-                xty.addListener(myFunctionm);
-
-
-
-
-
-
-
-
-
-
-
-
 //     // const EFFECT2 = document.querySelector("#effect2");
     
     
