@@ -103,35 +103,37 @@ details{
 
 
 .uli1{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 25%;
-  background-color: #282A35;
-  position: fixed;
-  overflow: auto;
-  overflow: hidden;
-  z-index: 1600;
-  left: 0;
-  top: 0;
-  height: 200px;
-  width: 140px;
-  display: flex;
-  /* font-family: sans-serif; */
-  font-size: 17px;
-  font-family: 'Source Sans Pro', sans-serif;
-  color: #f1f1f1;
-  padding: 0;
-  letter-spacing: 1px;
-  box-shadow: -4px 2px 10px black, 0px -4px 20px 0px blue;
-  box-sizing: inherit;
-  border-bottom: 2px solid black;
-  /* padding: 0; */
-  align-items: stretch;
-  justify-content: flex-start;
-  flex-direction: column;
-  margin-top: 50px;
-  margin-left: 35px;
+    visibility: hidden;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #282A35;
+    position: fixed;
+    overflow: auto;
+    overflow: hidden;
+    z-index: 1600;
+    left: 0;
+    top: 0;
+    height: 218px;
+    width: 142px;
+    display: flex;
+    font-size: 17px;
+    color: #f1f1f1;
+    padding: 0;
+    letter-spacing: 1px;
+    box-shadow: -4px 2px 10px black, 0px -4px 20px 0px blue;
+    box-sizing: inherit;
+    border-bottom: 2px solid black;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 35px;
+    margin-left: 35px;
+    animation-duration: 0.75s;
+    animation-name: example;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
 }
 
 li a {
