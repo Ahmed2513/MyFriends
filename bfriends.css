@@ -297,6 +297,32 @@ li a:hover {
   }
   }
 
+.media{
+  width: 800px;
+  height: auto;
+}
+
+@media only screen and (max-width: 1443px){
+  .media{
+    width: 625px;
+    height: auto;
+  } 
+}
+
+  @media only screen and (max-width: 1260px){
+  .media{
+    width: 520px;
+    height: auto;
+   }  
+}
+    
+@media only screen and (max-width: 1150px){
+  .media{
+    width: 448px;
+    height: auto;
+  } 
+}
+    
 @keyframes example {
     0%
     {
