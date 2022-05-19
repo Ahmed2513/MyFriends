@@ -300,6 +300,7 @@ li a:hover {
 .videoo{
   width: 800px;
   height: auto;
+  box-shadow: rgb(255 59 59 / 42%) -3px 11px 20px;
 }
 
 @media only screen and (max-width: 1443px){
