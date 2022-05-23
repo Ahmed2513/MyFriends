@@ -835,7 +835,7 @@ li a:hover {
     margin-bottom: 16px;
     /* border-bottom: solid black 5px; */
     padding: 2px 2px;
-    box-shadow: -3px 3px 0px 0px #ff5722;
+    box-shadow: 0 0 14px 0px #ff2222eb;
     border-radius: 40px;
     background-color: black;
     margin-right: 7px;
@@ -864,7 +864,7 @@ li a:hover {
         margin-bottom: 16px;
         /* border-bottom: solid black 5px; */
         padding: 2px 2px;
-        box-shadow: -3px 3px 0px 0px #ff5722;
+        box-shadow: 0 0 14px 0px #ff2222eb;
         border-radius: 40px;
         margin-right: 6px;
     }
